@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Yuxi.Devops.Assessment.Database", "Yuxi.Devops.Assessment.Database\Yuxi.Devops.Assessment.Database.sqlproj", "{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuxi.Devops.Assessment.Core", "Yuxi.Devops.Assessment.Core\Yuxi.Devops.Assessment.Core.csproj", "{E4528F5A-BA93-47BA-9207-4240AE082A84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuxi.Devops.Assessment.Infrastructure", "Yuxi.Devops.Assessment.Infrastructure\Yuxi.Devops.Assessment.Infrastructure.csproj", "{EF4F6CC1-82B2-4098-82E3-73E080ED0B6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C2DA08ED-81F4-4B93-B3AA-AFD76899A87E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuxi.Devops.Assessment.UnitTests", "Yuxi.Devops.Assessment.UnitTests\Yuxi.Devops.Assessment.UnitTests.csproj", "{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuxi.Devops.Assessment.API", "Yuxi.Devops.Assessment.API\Yuxi.Devops.Assessment.API.csproj", "{784C08E3-F257-41BD-A1DD-AC088465FCA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6941E9FB-BD04-44F6-A419-0BF2FA9DE52A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E4528F5A-BA93-47BA-9207-4240AE082A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4528F5A-BA93-47BA-9207-4240AE082A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4528F5A-BA93-47BA-9207-4240AE082A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4528F5A-BA93-47BA-9207-4240AE082A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4F6CC1-82B2-4098-82E3-73E080ED0B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4F6CC1-82B2-4098-82E3-73E080ED0B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4F6CC1-82B2-4098-82E3-73E080ED0B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4F6CC1-82B2-4098-82E3-73E080ED0B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784C08E3-F257-41BD-A1DD-AC088465FCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784C08E3-F257-41BD-A1DD-AC088465FCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784C08E3-F257-41BD-A1DD-AC088465FCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784C08E3-F257-41BD-A1DD-AC088465FCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC20F5CA-E7D5-4CCC-A032-4F96FE40BDD7} = {C2DA08ED-81F4-4B93-B3AA-AFD76899A87E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F0C3460-27E3-43E9-9BD4-9955BFB1941A}
+	EndGlobalSection
+EndGlobal
