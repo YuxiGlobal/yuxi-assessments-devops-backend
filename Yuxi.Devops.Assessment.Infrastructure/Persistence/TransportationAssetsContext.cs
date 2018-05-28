@@ -58,7 +58,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Company>()
                 .Property(e => e.Name)
-                .HasColumnName("Nombre").HasMaxLength(300).HasColumnType("nvarchar");
+                .HasColumnName("Nombre").HasColumnType("nvarchar(300)");
 
             #endregion
 
@@ -91,19 +91,19 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Person>()
                 .Property(e => e.Identification)
-                .HasColumnName("Identificacion").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Identificacion").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Person>()
                 .Property(e => e.Name)
-                .HasColumnName("Nombres").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Nombres").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Person>()
                 .Property(e => e.LastName)
-                .HasColumnName("Apellidos").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Apellidos").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Person>()
                 .Property(e => e.Email)
-                .HasColumnName("CorreoElectronico").HasMaxLength(100).HasColumnType("nvarchar");
+                .HasColumnName("CorreoElectronico").HasColumnType("nvarchar(100)");
 
             modelBuilder.Entity<Person>()
                 .Property(e => e.Mobile)
@@ -132,15 +132,15 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Vehicle>()
                 .Property(e => e.Plate)
-                .HasColumnName("Placa").HasMaxLength(15).HasColumnType("nvarchar");
+                .HasColumnName("Placa").HasColumnType("nvarchar(15)");
 
             modelBuilder.Entity<Vehicle>()
                .Property(e => e.Brand)
-               .HasColumnName("Marca").HasMaxLength(50).HasColumnType("nvarchar");
+               .HasColumnName("Marca").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.Line)
-              .HasColumnName("Linea").HasMaxLength(50).HasColumnType("nvarchar");
+              .HasColumnName("Linea").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.Model)
@@ -164,19 +164,19 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.TrailerPlate)
-              .HasColumnName("PlacaRemolque").HasMaxLength(15).HasColumnType("nvarchar");
+              .HasColumnName("PlacaRemolque").HasColumnType("nvarchar(15)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.TrailerBrand)
-              .HasColumnName("MarcaRemolque").HasMaxLength(50).HasColumnType("nvarchar");
+              .HasColumnName("MarcaRemolque").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.BodyworkLine)
-              .HasColumnName("LineaCarroceria").HasMaxLength(50).HasColumnType("nvarchar");
+              .HasColumnName("LineaCarroceria").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.BodyworkModel)
-              .HasColumnName("ModeloCarroceria").HasMaxLength(50).HasColumnType("nvarchar");
+              .HasColumnName("ModeloCarroceria").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<Vehicle>()
               .Property(e => e.BodyworkTypeCode)
@@ -229,11 +229,11 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<IdentificationType>()
                .Property(e => e.Name)
-               .HasColumnName("Nombre").HasMaxLength(50).HasColumnType("nvarchar");
+               .HasColumnName("Nombre").HasColumnType("nvarchar(50)");
 
             modelBuilder.Entity<IdentificationType>()
                .Property(e => e.Acronym)
-               .HasColumnName("Acronimo").HasMaxLength(5).HasColumnType("nvarchar");
+               .HasColumnName("Acronimo").HasColumnType("nvarchar(5)");
 
             #endregion
 
@@ -252,7 +252,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<BodyworkType>()
                .Property(e => e.Name)
-               .HasColumnName("Nombre").HasMaxLength(100).HasColumnType("nvarchar");
+               .HasColumnName("Nombre").HasColumnType("nvarchar(100)");
 
             #endregion
 
@@ -271,7 +271,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<LoadType>()
                .Property(e => e.Name)
-               .HasColumnName("Nombre").HasMaxLength(100).HasColumnType("nvarchar");
+               .HasColumnName("Nombre").HasColumnType("nvarchar(100)");
 
             #endregion
 
@@ -294,7 +294,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<SubClasification>()
                .Property(e => e.Name)
-               .HasColumnName("Nombre").HasMaxLength(50).HasColumnType("nvarchar");
+               .HasColumnName("Nombre").HasColumnType("nvarchar(50)");
 
             #endregion
 
@@ -313,12 +313,12 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<DrivingLicense>()
                 .Property(e => e.Category)
-                .HasColumnName("Categoria").HasMaxLength(3).HasColumnType("varchar")
+                .HasColumnName("Categoria").HasColumnType("varchar(3)")
                 .IsUnicode(false);
 
             modelBuilder.Entity<DrivingLicense>()
                 .Property(e => e.Description)
-                .HasColumnName("Descripcion").HasMaxLength(200).HasColumnType("nvarchar");
+                .HasColumnName("Descripcion").HasColumnType("nvarchar(200)");
 
             #endregion
 
@@ -358,7 +358,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Designation>()
                 .Property(e => e.Configuration)
-                .HasColumnName("Configuracion").HasMaxLength(5).HasColumnType("varchar")
+                .HasColumnName("Configuracion").HasColumnType("varchar(5)")
                 .IsUnicode(false);
 
             modelBuilder.Entity<Designation>()
@@ -367,7 +367,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Designation>()
                 .Property(e => e.Description)
-                .HasColumnName("Descripcion").HasMaxLength(500).HasColumnType("nvarchar");
+                .HasColumnName("Descripcion").HasColumnType("nvarchar(500)");
 
             modelBuilder.Entity<Designation>()
                 .Property(e => e.AutomotiveAxles)
@@ -441,7 +441,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Clasification>()
                 .Property(e => e.Name)
-                .HasColumnName("Nombre").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Nombre").HasColumnType("nvarchar(50)");
 
             #endregion
 
@@ -460,7 +460,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Category>()
                 .Property(e => e.Name)
-                .HasColumnName("Nombre").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Nombre").HasColumnType("nvarchar(50)");
 
             #endregion
 
@@ -479,7 +479,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence
 
             modelBuilder.Entity<Accessory>()
                 .Property(e => e.Name)
-                .HasColumnName("Nombre").HasMaxLength(50).HasColumnType("nvarchar");
+                .HasColumnName("Nombre").HasColumnType("nvarchar(50)");
 
             #endregion
 
