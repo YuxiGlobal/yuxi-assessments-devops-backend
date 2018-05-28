@@ -31,13 +31,11 @@ namespace Yuxi.Devops.Assessment.API
             services.AddHealthChecks(checks =>
             {
                 checks.AddSqlCheck("TransportationAssetsDb", unitOfWorkConfig.DatabaseConnectionString);
-            });
-
-            services.AddHealthChecks(checks =>
-            {
                 checks.AddValueTaskCheck("HTTP Endpoint", () => new
                     ValueTask<IHealthCheckResult>(HealthCheckResult.Healthy("Ok")));
             });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
