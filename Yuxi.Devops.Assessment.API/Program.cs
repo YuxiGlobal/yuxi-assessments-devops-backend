@@ -19,7 +19,7 @@ namespace Yuxi.Devops.Assessment.API
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseHealthChecks("/hc")
+                .UseHealthChecks("/HealthCheck")
                 .UseStartup<Startup>()
                 .Build();
     }
