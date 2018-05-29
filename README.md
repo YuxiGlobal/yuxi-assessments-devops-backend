@@ -16,7 +16,6 @@ SQL Server Database project for Azure SQL
   * build command: must be build using MSBuild > 15.0 
   
 ## Running example 
-Here you can find a functional release of the application: https://yuxi-assessments-devops-backend.azurewebsites.net
   * Health Check:  [HTTP GET /HealtCheck ](https://yuxi-assessments-devops-backend.azurewebsites.net/HealthCheck)
   * Drivers : [HTTP GET /api/drivers](https://yuxi-assessments-devops-backend.azurewebsites.net/api/drivers) 
 
