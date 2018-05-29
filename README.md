@@ -20,4 +20,7 @@ SQL Server Database project for Azure SQL
   * Health Check:  [HTTP GET /HealtCheck ](https://yuxi-assessments-devops-backend.azurewebsites.net/HealthCheck)
   * Drivers : [HTTP GET /api/drivers](https://yuxi-assessments-devops-backend.azurewebsites.net/api/drivers) 
 
+## Deployment diagram
+![Deployment Diagram][deployment-diagram]
 
+[deployment-diagram]: ./deployment-diagram.png "Deployment Diagram"
