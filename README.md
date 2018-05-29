@@ -7,7 +7,7 @@ Rest API built using ASP.NET core 2.0
   * Publish command: ```dotnet publish Yuxi.Devops.Assessment.API.csproj --configuration -release --output ./releaseFolder```
   * Database credentials : appsettings.json > ConnectionStrings.DatabaseConnectionString
   
-## Yuxi.Devops.Assessment.UnitTests.csproj: 
+## Yuxi.Devops.Assessment.UnitTests: 
 Unit tests built using .netcore and MSTest runner
   * Test command: ```dotnet test Yuxi.Devops.Assessment.UnitTests.csproj```
   
