@@ -17,6 +17,9 @@ SQL Server Database project for Azure SQL
   * Deployment : Apply the DAC package to the database.
   
 ## Running example 
+
+Swagger Page:  https://yuxi-assessments-devops-backend.azurewebsites.net/swagger/
+
   * Health Check:  [HTTP GET /HealtCheck ](https://yuxi-assessments-devops-backend.azurewebsites.net/HealthCheck)
   * Drivers : [HTTP GET /api/drivers](https://yuxi-assessments-devops-backend.azurewebsites.net/api/drivers) 
 
