@@ -28,7 +28,7 @@ namespace Yuxi.Devops.Assessment.UnitTests.Controllers
         {
             var existingCompany = GetEmptyCompany();
 
-            _repositoryMock.Get(Arg.Any<int>()).Returns(existingCompany);
+            _repositoryMock.Get(Arg.Any<long>()).Returns(existingCompany);
             _unitOfWorkMock.Companies.Returns(_repositoryMock);
 
             var controller = new CompaniesController(_unitOfWorkMock);

@@ -30,7 +30,7 @@ namespace Yuxi.Devops.Assessment.UnitTests.Controllers
             var id = 123;
             var driver = GetEmptyDriver(id);
 
-            _repositoryMock.Get(Arg.Any<int>()).Returns(driver);
+            _repositoryMock.Get(Arg.Any<long>()).Returns(driver);
             _unitOfWorkMock.Drivers.Returns(_repositoryMock);
 
             var controller = new DriversController(_unitOfWorkMock);
@@ -47,7 +47,7 @@ namespace Yuxi.Devops.Assessment.UnitTests.Controllers
             var driver = GetEmptyDriver(123);
             listResponse.Add(driver);
 
-            _repositoryMock.GetDriverByAdministrator(Arg.Any<int>()).Returns(listResponse);
+            _repositoryMock.GetDriverByAdministrator(Arg.Any<long>()).Returns(listResponse);
             _unitOfWorkMock.Drivers.Returns(_repositoryMock);
 
             var controller = new DriversController(_unitOfWorkMock);

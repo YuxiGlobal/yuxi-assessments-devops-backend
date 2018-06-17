@@ -29,7 +29,7 @@ namespace Yuxi.Devops.Assessment.UnitTests.Controllers
         {
             var existingVehicle = GetEmptyVehicle();
 
-            _repositoryMock.Get(Arg.Any<int>()).Returns(existingVehicle);
+            _repositoryMock.Get(Arg.Any<long>()).Returns(existingVehicle);
             _unitOfWorkMock.Vehicles.Returns(_repositoryMock);
 
 
