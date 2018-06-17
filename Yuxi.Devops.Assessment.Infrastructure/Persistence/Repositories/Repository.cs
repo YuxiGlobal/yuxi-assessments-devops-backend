@@ -16,7 +16,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence.Repositories
             Context = context;
         }
 
-        public TEntity Get(int id)
+        public TEntity Get(long id)
         {
             return Context.Set<TEntity>().Find(id);
         }

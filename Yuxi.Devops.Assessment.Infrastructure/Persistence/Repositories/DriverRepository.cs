@@ -14,7 +14,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence.Repositories
         {
         }
 
-        public IEnumerable<Driver> GetDriverByAdministrator(int administratorId)
+        public IEnumerable<Driver> GetDriverByAdministrator(long administratorId)
         {
             return TransportationAssetsContext.Driver.Where(c => c.Vehicles.Where(v => v.AdministratorCode == administratorId).Any()).ToList();
         }
@@ -24,7 +24,7 @@ namespace Yuxi.Devops.Assessment.Infrastructure.Persistence.Repositories
             return TransportationAssetsContext.Driver.Where(d => d.Person.Mobile == phoneNumber).FirstOrDefault();
         }
 
-        public Person GetAdministratorByDriver(int driverId)
+        public Person GetAdministratorByDriver(long driverId)
         {
             var driver = TransportationAssetsContext.Driver.Where(d => d.PersonCode == driverId).FirstOrDefault();
             

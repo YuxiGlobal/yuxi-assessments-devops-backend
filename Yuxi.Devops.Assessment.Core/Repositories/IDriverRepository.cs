@@ -6,9 +6,9 @@ namespace Yuxi.Devops.Assessment.Core.Repositories
 {
     public interface IDriverRepository : IRepository<Driver>
     {
-        IEnumerable<Driver> GetDriverByAdministrator(int administratorId);
+        IEnumerable<Driver> GetDriverByAdministrator(long administratorId);
 
-        Person GetAdministratorByDriver(int driverId);
+        Person GetAdministratorByDriver(long driverId);
 
         Driver GetDriverByPhoneNumber(long phoneNumber);
     }
